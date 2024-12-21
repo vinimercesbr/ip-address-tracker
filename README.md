@@ -1,5 +1,3 @@
-# Vue 3 + Vite
+# Description:
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+This solution for the [frontend-mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0) challenge uses [Maplibre](https://maplibre.org/) to create maps instead of [Leaflet](https://leafletjs.com/), along with [ip-api](https://ip-api.com/) in place of [ipify](https://www.ipify.org/). The frameworks used are [Tailwindcss](https://tailwindcss.com/) and [Vue.js](https://vuejs.org/).
