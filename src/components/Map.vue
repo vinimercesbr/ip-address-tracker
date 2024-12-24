@@ -7,7 +7,7 @@ import maplibre from 'maplibre-gl';
 import { API_KEY } from './config.js';
 
 export default {
-  name: 'MapComponent',
+  name: 'Map',
   props: {
     base: {
       type: Array,
