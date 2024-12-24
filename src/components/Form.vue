@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <div id="banner">
     <h1>IP Address Tracker</h1>
     <form class="search-form" @submit.prevent="submitForm">
       <input type="text" class="search-form__box" v-model="ipInput" placeholder="Search for any IP address or domain">

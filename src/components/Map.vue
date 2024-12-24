@@ -1,13 +1,10 @@
 <template>
-  <div id="map">
-    <p hidden>
-      {{base}}
-    </p>
-  </div>
+  <div id="map"></div>
 </template>
+
 <script>
 import maplibre from 'maplibre-gl';
-import {API_KEY} from './config.js';
+import { API_KEY } from './config.js';
 
 export default {
   name: 'MapComponent',
@@ -17,17 +14,44 @@ export default {
       required: true
     }
   },
-  updated() {
-    this.initMap();
+  data() {
+    return {
+      map: null,
+      mapCenter: this.base
+    };
   },
-  methods:{
-    initMap(){
-      new maplibre.Map({
-        container:'map', // Map container id
-        style:`https://api.maptiler.com/maps/basic-v2/style.json?key=${API_KEY}`,
-        center:this.base,//Coordinates of the center of the map
-        zoom:10// Initial zoom level
-      });
+  watch: {
+    base(mapCenter) {
+      if (this.map) {
+        this.map.setCenter(mapCenter);
+      } else {
+        this.initMap(mapCenter);
+      }
+    }
+  },
+  updated() {
+    this.initMap(this.mapCenter);
+  },
+  methods: {
+    initMap(mapCenter) {
+      if (!this.map) {
+        this.createMap(mapCenter);
+      }
+    },
+    createMap(center) {
+      try {
+        this.map = new maplibre.Map({
+          container: 'map',
+          style: `https://api.maptiler.com/maps/basic-v2/style.json?key=${API_KEY}`,
+          center: center,
+          zoom: 10
+        });
+      } catch (error) {
+        this.handleMapError(error);
+      }
+    },
+    handleMapError(error) {
+      console.error('Error initializing map:', error);
     }
   }
 };
