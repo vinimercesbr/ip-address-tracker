@@ -15,10 +15,13 @@ export default{
 <template>
   <div id="app">
     <div id="banner">
+      <Form/>
     </div>
     <div id="card">
+      <IpLocator/>
     </div>
     <div id="map">
+      <Map/>
     </div>
   </div>
 </template>
