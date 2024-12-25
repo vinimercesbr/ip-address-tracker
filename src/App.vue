@@ -13,14 +13,14 @@ export default{
 };
 </script>
 <template>
-  <div id="app">
+  <div id="app" class="touch-none">
     <div id="banner">
       <Form/>
     </div>
     <div id="card">
       <IpLocator/>
     </div>
-    <div id="map">
+    <div id="map" class="max-w-full touch-none max-h-64">
       <Map/>
     </div>
   </div>
