@@ -1,5 +1,5 @@
 <template>
-  <div id="map"></div>
+  <div id="map" class="h-[80vh] -m-5 min-w-[100vh] mt-0 touch-none;"></div>
 </template>
 
 <script>
