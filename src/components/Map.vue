@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class=" max-[375px]:max-h-[80vh]   h-[80vh] -m-5   w-full  max-[375px]:max-w-[100vh] mt-0 touch-none"></div>
+  <div id="map" class=" max-[375px]:max-h-[80vh] h-[80vh] -m-5   min-w-full  max-[375px]:max-w-[100vh] mt-0 touch-none"></div>
 
 </template>
 
@@ -45,7 +45,8 @@ export default {
           container: 'map',
           style: `https://api.maptiler.com/maps/basic-v2/style.json?key=${API_KEY}`,
           center: center,
-          zoom: 10
+          zoom: 10, 
+          attributionControl:false
         });
       } catch (error) {
         this.handleMapError(error);
