@@ -5,11 +5,16 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: { 
+    extend: {
       fontFamily: {
-        'rubik': ['Rubik', 'sans-serif'],
-
-},
+        'rubik': ['Rubik', 'sans-serif'], // Custom font
+      },
+    },
+    screens: {
+      // 'mobile' with max-width for smaller screens
+     'mobile': '375px',
+      // 'desktop' with min-width for larger screens
+      'desktop': '1440px', // Keep if needed, or adjust for larger devices
     },
   },
   plugins: [],
