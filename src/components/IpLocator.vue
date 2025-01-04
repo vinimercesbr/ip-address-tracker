@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="m-8 ml-3 -mr-2 -mt-9 min-[375px]:flex absolute p-1 bg-white  rounded-xl items-center justify-items-center font-semibold text-center max-h-[60vh]  min-w-[80%] touch-none">
+  <div id="card" class="m-8 ml-3  -mr-2 -mt-9 min-[375px]:flex absolute p-1 bg-white  rounded-xl items-center justify-items-center font-semibold text-center max-h-[60vh]  min-w-[80%] touch-none">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong>
@@ -66,11 +66,11 @@ export default {
         this.center = [data.longitude, data.latitude];
         this.ipData = {
           ip: data.ip,
-          timezone: data.time_zone.offset,
+          timezone: data.time_zone.name,
           cep: data.zipcode,
           isp: data.isp,
           city: data.city,
-          region: data.country_name
+          region: data.state_prov
         };
       } catch (error) {
         this.handleFetchError(error);
@@ -87,13 +87,12 @@ export default {
 };
 </script>
 <style>
-  
     .manager {
-        @apply flex text-center justify-items-center p-3 m-1 text-xs flex-col;
+        @apply flex text-center justify-items-center p-3 m-1  text-xs flex-col;
     };
 
     .manager strong {
-        @apply pt-1 text-center font-[650] break-all text-base;
+        @apply pt-1 text-center font-[650] break-all  text-base;
     };
 
     .manager a {
