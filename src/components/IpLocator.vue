@@ -32,7 +32,7 @@
 
 <script>
 import core from './Map.vue';
-
+import { API_KEY_IP } from './config';
 
 export default {
   components: {
@@ -63,21 +63,21 @@ export default {
     async fetchIpData(newSearch) {
       try {
         let data = await this.getIpData(newSearch);
-        this.center = [data.lon, data.lat];
+        this.center = [data.longitude, data.latitude];
         this.ipData = {
-          ip: data.query,
-          timezone: data.timezone,
-          cep: data.zip,
+          ip: data.ip,
+          timezone: data.time_zone.offset,
+          cep: data.zipcode,
           isp: data.isp,
           city: data.city,
-          region: data.region
+          region: data.country_name
         };
       } catch (error) {
         this.handleFetchError(error);
       }
     },
     async getIpData(search) {
-      let response = await fetch(`http://ip-api.com/json/${search}`);
+      let response = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${API_KEY_IP}&ip=${search}&lang=en`);
       return await response.json();
     },
     handleFetchError(error) {
