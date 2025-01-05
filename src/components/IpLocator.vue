@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="m-11 -mr-4 ml-8 -mt-9 min-[375px]:flex absolute p-1 bg-white  rounded-xl items-center justify-items-center font-semibold text-center max-h-[60vh]  min-w-[80%] touch-none">
+  <div id="card" class="m-11 desktop:-mr-4 ml-8 -mt-12 min-[375px]:flex absolute p-1 bg-white  rounded-xl items-center justify-items-center font-semibold text-center max-h-[60vh]  min-w-[80%] touch-none">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong>
@@ -17,7 +17,7 @@
     <div class="manager">
       <a>TIMEZONE</a>
       <strong>
-        {{ ipData.timezone }}
+        UTC{{ ipData.timezone }}
       </strong>
     </div>
     <div class="manager">
@@ -66,7 +66,7 @@ export default {
         this.center = [data.longitude, data.latitude];
         this.ipData = {
           ip: data.ip,
-          timezone: data.time_zone.name,
+          timezone: data.time_zone.offset,
           cep: data.zipcode,
           isp: data.isp,
           city: data.city,
@@ -87,15 +87,28 @@ export default {
 };
 </script>
 <style>
+  /*
     .manager {
         @apply flex text-center justify-items-center p-3 m-1  text-xs flex-col;
     };
 
     .manager strong {
-        @apply pt-1 text-center font-[650] break-all  text-base;
+        @apply pt-1 text-center max-mobile:inline-flex font-[650]  text-base;
     };
 
     .manager a {
         @apply text-sm -ml-1 pt-1 text-[11px] whitespace-pre text-[350] text-[#969696];
-    };
+    };*/
+        .manager {
+        @apply flex text-center  justify-items-center p-3  mx-2 flex-col;
+    }
+
+    .manager strong {
+        @apply pt-1 text-center text-base font-[590] whitespace-break-spaces;
+    }
+
+    .manager a {
+        @apply text-sm -ml-1 pt-1 text-[11px] whitespace-pre text-[350] text-[#969696];
+    }
+
 </style>
