@@ -1,4 +1,4 @@
 //hosting service that offers the maps
 //https://cloud.maptiler.com/maps/
 export const API_KEY='qjLHyyI3EkLFFX7IZokm';
-export const API_KEY_IP='647a8efe44c14957af14d5089d1ae266';
+export const API_KEY_IP='3d6595a6b91340bbb8a8ddfa13df45af';
