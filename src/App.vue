@@ -17,7 +17,9 @@ export default{
     <div id="banner">
       <Form/>
     </div>
-    
+    <div id="card">
+      <IpLocator/>
+    </div>
     <div id="map">
       <Map/>
     </div>
