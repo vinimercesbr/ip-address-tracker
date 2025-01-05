@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="m-11 desktop:-mr-4 ml-8 -mt-12 min-[375px]:flex absolute p-1 bg-white  rounded-xl items-center justify-items-center font-semibold text-center max-h-[60vh]  min-w-[80%] touch-none">
+  <div id="card" class="m-11 desktop:-mr-4 ml-8 -mt-12 inline-flex max-mobile:inline  absolute p-1 bg-white  rounded-xl items-center justify-items-center font-semibold text-center max-h-[60vh]  min-w-[80%] touch-none">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong>
@@ -17,7 +17,8 @@
     <div class="manager">
       <a>TIMEZONE</a>
       <strong>
-        UTC{{ ipData.timezone }}
+        <p>UTC{{ ipData.timezone }}</p>
+       
       </strong>
     </div>
     <div class="manager">
