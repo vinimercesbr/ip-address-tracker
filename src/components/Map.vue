@@ -43,7 +43,7 @@ export default {
       try {
         this.map = new maplibre.Map({
           container: 'map',
-          style: `https://api.maptiler.com/maps/basic-v2/style.json?key=${API_KEY}`,
+          style: `https://api.maptiler.com/maps/basic-v2/style.json?key=${API_KEY.MAP}`,
           center: center,
           zoom: 10, 
           attributionControl:false
