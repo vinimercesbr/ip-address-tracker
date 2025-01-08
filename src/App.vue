@@ -21,7 +21,7 @@ export default{
       
     </div>
     <div id="map">
-      <Map/>
+      
     </div>
   </div>
 </template>
