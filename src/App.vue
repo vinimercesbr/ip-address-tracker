@@ -18,7 +18,7 @@ export default{
       <Form/>
     </div>
     <div id="card">
-      <IpLocator/>
+      
     </div>
     <div id="map">
       <Map/>
