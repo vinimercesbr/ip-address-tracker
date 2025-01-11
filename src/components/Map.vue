@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class=" max-[375px]:max-h-[90vh] min-h-[80vh] -m-5   desktop:min-w-[80vh]  max-[375px]:max-w-[100vh] mt-0 max-mobile:-mt-5  touch-none"></div>
+  <div id="map" class="mobile:min-h-[90vh] desktop:min-h-[80vh] -m-5  desktop:min-w-[100%]  min-w-max mt-0 max-mobile:-mt-5  touch-none"></div>
 
 </template>
 
