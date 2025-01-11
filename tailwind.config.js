@@ -11,11 +11,12 @@ export default {
       },
     },
     screens: {
-      // 'mobile' with max-width for smaller screens
-     'mobile': '375px',
-      // 'desktop' with min-width for larger screens
-      'desktop': '1440px', // Keep if needed, or adjust for larger devices
-    },
+        // Mobile (tamanho padrão sem media query, para dispositivos móveis)
+        'mobile': {'max': '768px'}, // Aplica para telas até 768px (Mobile)
+
+        // Desktop (para telas maiores que 768px)
+        'desktop': {'min': '769px'}, // Aplica para telas acima de 768px (Desktop)
+      },
   },
   plugins: [],
 }
