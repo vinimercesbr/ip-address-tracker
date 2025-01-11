@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="m-11 desktop:-mr-4 ml-8 -mt-12 mobile:inline-flex absolute p-1 bg-white  rounded-xl items-center justify-items-center font-semibold text-center mobile:max-h-[60vh]  min-w-[80%] touch-none">
+  <div id="card" class="m-11 desktop:-mr-4 ml-8 -mt-12 mobile:mb-5 mobile:inline-flex absolute p-1 mobile:-p-3 bg-white  rounded-xl items-center justify-items-center font-semibold text-center mobile:max-h-[60vh]  min-w-[80%] mobile:min-w-max touch-none">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong>
