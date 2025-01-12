@@ -13,7 +13,7 @@ export default{
 };
 </script>
 <template>
-  <div id="app">
+  <div id="app" class="m-0 p-0">
     <div id="banner">
       <Form/>
     </div>

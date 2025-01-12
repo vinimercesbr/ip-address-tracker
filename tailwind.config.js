@@ -12,10 +12,10 @@ export default {
     },
     screens: {
         // Mobile (tamanho padrão sem media query, para dispositivos móveis)
-        'mobile': {'max': '768px'}, // Aplica para telas até 768px (Mobile)
+        'mobile': {'max': '600px'}, // Aplica para telas até 768px (Mobile)
 
         // Desktop (para telas maiores que 768px)
-        'desktop': {'min': '769px'}, // Aplica para telas acima de 768px (Desktop)
+        'desktop': {'min': '601px'}, // Aplica para telas acima de 768px (Desktop)
       },
   },
   plugins: [],
