@@ -1,29 +1,29 @@
 <template>
-  <div id="card"  class="-mt-9 desktop:mb-5 ml-9 desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold  desktop:max-h-[30%]  mobile:max-h-[60vh] mobile:min-h-[45%] mobile:min-w-[75%] mobile:max-w-[80%] touch-none">
+  <div id="card"  class="-mt-9 desktop:mb-5 mx-[10%] desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold desktop:max-h-[30%]  desktop:w-[75%] mobile:max-h-[60vh] mobile:min-h-[40%] mobile:w-[75%] touch-none">
     <div class="manager">
       <a>IP ADDRESS</a>
-      <strong>
+      <strong class="break-all">
         {{ ipData.ip }}
       </strong>
     </div>
     <div class="manager">
-      <a>LOCATION</a>
-      <strong>
+      <a class="border-custom">LOCATION</a>
+      <strong class="border-custom break-words">
         {{ ipData.city }}, 
         {{ ipData.region }}
         {{ ipData.cep}}
       </strong>
     </div>
     <div class="manager">
-      <a>TIMEZONE</a>
-      <strong>
+      <a class="border-custom">TIMEZONE</a>
+      <strong class="border-custom">
         <p>UTC{{ ipData.timezone }}</p>
-       
+       {{}}
       </strong>
     </div>
     <div class="manager">
-      <a>ISP</a>
-      <strong >
+      <a class="border-custom">ISP</a>
+      <strong class="border-custom">
         {{ ipData.isp }}
       </strong>
     </div>
@@ -88,29 +88,21 @@ export default {
 };
 </script>
 <style>
-  /*
-    .manager {
-        @apply flex text-center justify-items-center p-3 m-1  text-xs flex-col;
-    };
 
-    .manager strong {
-        @apply pt-1 text-center max-mobile:inline-flex font-[650]  text-base;
-    };
-
-    .manager a {
-        @apply text-sm -ml-1 pt-1 text-[11px] whitespace-pre text-[350] text-[#969696];
-    };*/
         .manager {
-        @apply flex text-center  desktop:text-start justify-items-center mobile:p-3 desktop:p-5  desktop:mr-8 flex-col;
+        @apply flex text-center  desktop:text-start desktop:my-0 justify-items-center mobile:p-2 desktop:p-2 desktop:mr-[4%] flex-col;
     }
 
     .manager strong {
-        @apply pt-1 desktop:-ml-1 mobile:text-center desktop:border-l desktop:border-[#f969696] desktop:pl-5 text-base font-[590] whitespace-break-spaces  ;
+        @apply pt-1 desktop:-ml-1 mobile:text-center desktop:p-1  desktop:pl-5 text-base font-[590] whitespace-break-spaces ;
     
     }
           
 
     .manager a {
-        @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px]  whitespace-pre desktop:border-l desktop:border-[#f969696] text-[400] text-[#969696];
+        @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px]  whitespace-pre  text-[400] text-[#969696];
+    };
+    .border-custom{
+      @apply desktop:border-l desktop:border-[#f969696];
     };
 </style>
