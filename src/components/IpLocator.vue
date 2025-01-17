@@ -90,12 +90,12 @@ export default {
   .manager {
     @apply flex text-center  desktop:text-start desktop:my-0 justify-items-center mobile:p-2 desktop:p-2 desktop:mr-[4%] flex-col;
    };
+  .manager a {
+    @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px]  whitespace-pre  text-[400] text-[#969696];
+  };
   .manager strong {
     @apply pt-1 desktop:-ml-1 mobile:text-center desktop:p-1  desktop:pl-5 text-base font-[590] whitespace-break-spaces ;
   };
-  .manager a {
-    @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px]  whitespace-pre  text-[400] text-[#969696];
-    };
   .border-custom{
     @apply desktop:border-l desktop:border-[#f969696];
   };
