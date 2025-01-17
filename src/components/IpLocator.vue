@@ -18,7 +18,7 @@
       <a class="border-custom">TIMEZONE</a>
       <strong class="border-custom">
         <p>UTC{{ ipData.timezone }}</p>
-       {{}}
+        <br class="mobile:hidden">
       </strong>
     </div>
     <div class="manager">
