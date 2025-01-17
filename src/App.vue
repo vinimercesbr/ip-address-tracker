@@ -18,10 +18,8 @@ export default{
       <Form/>
     </div>
     <div id="card">
-      
     </div>
     <div id="map">
-      
     </div>
   </div>
 </template>

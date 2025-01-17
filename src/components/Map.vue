@@ -1,8 +1,7 @@
 <template>
-  <div id="map" class="mobile:min-h-[70vh] desktop:min-h-[80vh]  desktop:max-w-[100%]    touch-none"></div>
-
+  <div id="map" class="mobile:min-h-[70vh] desktop:min-h-[80vh] desktop:max-w-[100%] touch-none">
+  </div>
 </template>
-
 <script>
 import maplibre from 'maplibre-gl';
 import { API_KEY } from './config.js';
