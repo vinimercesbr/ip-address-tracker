@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="-mt-9 desktop:mb-5 mx-[10%] desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold desktop:max-h-[30%]  desktop:w-[75%] mobile:max-h-[60vh] mobile:min-h-[40%] mobile:w-[75%] touch-none">
+  <div id="card" class="-mt-9 desktop:mb-5 desktop:mx-[15%] mobile:mx-[10%] desktop:inline-flex absolute p-3 bg-white desktop:p-1  desktop:text-justify rounded-xl items-center justify-items-center font-semibold desktop:max-h-[30%]  desktop:w-[65%] mobile:max-h-[60vh] mobile:min-h-[40%] mobile:w-[75%] touch-none">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong class="break-all">
@@ -88,7 +88,7 @@ export default {
 </script>
 <style>
   .manager {
-    @apply flex text-center  desktop:text-start desktop:my-0 justify-items-center mobile:p-2 desktop:p-2 desktop:mr-[4%] flex-col;
+    @apply flex text-center  desktop:text-start desktop:my-0 justify-items-center p-2 desktop:mr-[6%] flex-col;
    };
   .manager a {
     @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px]  whitespace-pre  text-[400] text-[#969696];
