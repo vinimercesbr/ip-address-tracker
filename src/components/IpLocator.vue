@@ -8,7 +8,7 @@
     </div>
     <div class="manager">
       <a class="border-custom">LOCATION</a>
-      <strong class="border-custom break-words">
+      <strong class="border-custom break-all">
         {{ ipData.city }}, 
         {{ ipData.region }}
         {{ ipData.cep}}
@@ -88,7 +88,7 @@ export default {
 </script>
 <style>
   .manager {
-    @apply flex text-center  desktop:text-start desktop:my-0 justify-items-center p-2 desktop:mr-[6%] flex-col;
+    @apply flex text-center  desktop:text-start desktop:my-0 justify-items-center p-2 desktop:mr-[4%] flex-col;
    };
   .manager a {
     @apply text-sm -ml-1 pt-1 desktop:pl-5 text-[11px]  whitespace-pre  text-[400] text-[#969696];
