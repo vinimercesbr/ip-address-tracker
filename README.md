@@ -1,4 +1,4 @@
-![Alt text](images/mobile-view.jpg)
+<img src="images/mobile-view.jpg" alt="Mobile" width="300" height="200">
 
 # Description:
 
