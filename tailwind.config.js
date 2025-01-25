@@ -11,14 +11,10 @@ export default {
       },
     },
     screens: {
-        'mobile': {'max': '412px'},
-        'desktop': {'min': '892px'},
-      },
-      /*screens: {
         'sm':'412px',
         'md':'768px',
         'lg':'892px',
-      },*/
+      },
   },
   plugins: [],
 }

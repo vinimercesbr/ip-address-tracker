@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class="mobile:min-h-[70vh] desktop:min-h-[80vh] desktop:max-w-[100%] touch-none">
+  <div id="map" class="">
   </div>
 </template>
 <script>
