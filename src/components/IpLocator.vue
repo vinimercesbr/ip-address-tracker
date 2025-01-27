@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="">
+  <div id="card" class="lg:absolute lg:inline-flex sm:fixed">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong class="break-all">
@@ -87,5 +87,14 @@ export default {
 };
 </script>
 <style>
-
+/*
+.manager{
+  @apply 
+}
+.manager a{
+  @apply
+}
+.manager strong{
+  @apply
+}*/
 </style>
