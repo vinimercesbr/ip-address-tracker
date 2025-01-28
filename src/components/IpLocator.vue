@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="lg:absolute lg:inline-flex sm:fixed">
+  <div id="card" class="lg:absolute lg:inline-flex">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong class="break-all">
@@ -18,7 +18,7 @@
       <a class="border-custom">TIMEZONE</a>
       <strong class="border-custom">
         <p>UTC{{ ipData.timezone }}</p>
-        <br class="mobile:hidden">
+        
       </strong>
     </div>
     <div class="manager">
@@ -87,10 +87,10 @@ export default {
 };
 </script>
 <style>
-/*
+
 .manager{
-  @apply 
-}
+  @apply  sm:flex sm:flex-col sm:p-2 sm:items-center;
+}/*
 .manager a{
   @apply
 }
