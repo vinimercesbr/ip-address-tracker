@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="lg:absolute lg:bg-white rounded-xl lg:-mt-4  p-4 lg:min-h-[12%] lg:inline-flex">
+  <div id="card" class="lg:absolute lg:bg-white rounded-xl -mt-4 p-2   lg:max-h-[12%] lg:inline-flex">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong class="break-all">
@@ -89,7 +89,7 @@ export default {
 <style>
 
 .manager{
-  @apply  sm:flex sm:flex-col sm:p-2 sm:items-center;
+  @apply  flex flex-col p-2 items-center;
 }/*
 .manager a{
   @apply
