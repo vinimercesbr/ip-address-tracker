@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="lg:absolute lg:bg-white rounded-xl -mt-4 p-2 lg:max-h-[12%] lg:inline-flex">
+  <div id="card" class="lg:absolute lg:bg-white rounded-xl lg:ml-[15%] -mt-4 p-2 lg:max-h-[12%] lg:max-w-[65%] lg:inline-flex">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong class="break-all">
