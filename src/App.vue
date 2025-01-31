@@ -13,7 +13,7 @@ export default{
 };
 </script>
 <template>
-  <div id="app" class="relative">
+  <div id="app" class="relative p-0 m-0 touch-none">
     <div id="banner">
       <Form/>
     </div>
