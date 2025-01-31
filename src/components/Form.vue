@@ -1,9 +1,9 @@
 <template>
-  <div id="banner" class="bg-cover bg-[url('/pattern-bg-mobile.png')] lg:bg-[url('/pattern-bg-desktop.png')]">
-    <h1 class="text-white p-3 mt-2 max-mobile:p-5 text-center mobile:-ml-2 font-semibold text-[25px] touch-none">IP Address Tracker</h1>
-    <form class="search-form text-center flex desktop:w-[70%] desktop:h-[25%] pt-0 ml-2 desktop:m-2 desktop:inline-flex mt-2 p-5 mb-5" @submit.prevent="submitForm">
-      <input type="text" class="search-form__box p-2 rounded-l-xl focus:outline-none max-w-[65%] min-w-[74%] inline-flex h-[55px] desktop:w-full ml-1 mb-5 desktop:m-4 touch-none;" v-model="ipInput" placeholder="Search for any IP address or domain">
-      <button class="search-form__button rounded-r-xl stroke-2 -mr-7 focus:outline-none desktop:-ml-4  desktop:mt-4 h-[55px] p-4 bg-black" type="submit">
+  <div id="banner" class="bg-cover -mt-2 bg-[url('/pattern-bg-mobile.png')] lg:bg-[url('/pattern-bg-desktop.png')]">
+    <h1 class="text-white p-3 mt-2 sm:p-5 text-center sm:-ml-2 font-semibold text-[25px] touch-none">IP Address Tracker</h1>
+    <form class="search-form text-center flex lg:w-[70%] lg:h-[25%] pt-0 ml-2 lg:m-2 sm:inline-flex mt-2 p-5 mb-5" @submit.prevent="submitForm">
+      <input type="text" class="search-form__box p-2 rounded-l-xl focus:outline-none max-w-[65%] min-w-[74%] inline-flex h-[55px] lg:w-full ml-1 mb-5 lg:m-4 touch-none;" v-model="ipInput" placeholder="Search for any IP address or domain">
+      <button class="search-form__button rounded-r-xl stroke-2 -mr-7 focus:outline-none lg:-ml-4  lg:mt-4 h-[55px] p-4 bg-black" type="submit">
         <img src="/icon-arrow.svg" alt="enviar">
       </button>
     </form>
