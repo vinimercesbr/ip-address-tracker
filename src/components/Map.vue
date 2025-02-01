@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class="w-screen h-screen">
+  <div id="map" class="w-screen h-screen sm:fixed touch-none">
   </div>
 </template>
 <script>
