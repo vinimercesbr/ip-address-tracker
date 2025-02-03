@@ -1,5 +1,5 @@
 <template>
-  <div id="card" class="lg:absolute lg:bg-white rounded-xl lg:ml-[15%] -mt-4 p-2 lg:max-h-[12%] lg:max-w-[65%] lg:inline-flex">
+  <div id="card" class="lg:absolute lg:bg-white rounded-xl lg:ml-[15%] -mt-4   lg:max-h-[45vh] p-6 lg:max-w-[65%] lg:inline-flex">
     <div class="manager">
       <a>IP ADDRESS</a>
       <strong class="break-all">
@@ -87,15 +87,15 @@ export default {
 </script>
 <style>
   .manager {
-    @apply flex text-center lg:text-start lg:my-0 justify-items-center p-1 lg:mr-[4%] flex-col;
+    @apply flex text-center lg:text-start  lg:my-0 justify-items-center p-1 lg:mr-[4%] flex-col;
    };
   .manager a {
     @apply text-sm -ml-1 pt-1 lg:pl-5 text-[13px] whitespace-pre text-[400] text-[#969696];
   };
   .manager strong {
-    @apply pt-1 lg:-ml-1 sm:text-center lg:p-1 break-words lg:pl-5 text-base font-[590] whitespace-break-spaces;
+    @apply pt-1 lg:-ml-1 sm:text-center  lg:p-1 break-words lg:pl-5 text-base font-[590] whitespace-break-spaces;
   };
   .border-custom{
-    @apply lg:border-l lg:border-[#f969696];
+    @apply lg:border-l-2 lg:border-[#f969696];
   };
 </style>
